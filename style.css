@@ -200,3 +200,72 @@ footer .button:hover {
     cursor: pointer;
 
 }
+
+header {
+    animation: top-to-down 700ms 150ms backwards;
+}
+
+form {
+    animation: down-to-top 700ms 250ms backwards;
+}
+
+body {
+    animation: opacity-only 700ms 150ms backwards;
+}
+
+legend {
+    animation: left-to-right 700ms 350ms backwards;
+}
+
+.input-wrapper {
+    animation: left-to-right 700ms 450ms backwards;
+}
+
+footer {
+    animation: opacity-only 1000ms 500ms backwards;
+}
+
+@keyframes top-to-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+@keyframes down-to-top {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+@keyframes opacity-only {
+    0% {
+        opacity: 0;
+        
+    }
+
+    100% {
+        opacity: 1;
+        
+    }
+ }
+ @keyframes left-to-right {
+    0% {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
